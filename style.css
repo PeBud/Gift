@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.tropic {
+  background-image: url(https://cdn.images.stsvacations.com/inventory/Jamaica_-_Runaway_Bay/Jewel_Paradise_Cove_Beach_Resort__26_Spa/medium_Jewel-Paradise-Cove-Beach-Resort-Sunset-Bar-Aerial.jpg);
+}
+
+.medicinal {
+  background-image: url(http://images.fineartamerica.com/images-medium-large/light-through-cabbage-leaf-caroline-peacock.jpg);
+}
+
+.image {
+  background-image: url(https://officialblackwallstreet.com/wp-content/uploads/2016/07/TucciPolo-Mens-Derby-Style-Luxury-Shoe-Side-Handsewn-Bleached-Brown-Suede-Upper-and-Leather-Sole5.jpg);
+}
+
+.music {
+  background-image: url(https://muz4now.com/wp-content/uploads/2013/03/MusicHistoryPiano.jpg);
+}
+
+
+main h1 {
+  font-family: cursive;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "tropic medicinal"
+  "image music";
+}
+
+button {
+  align-items: center;
+}
+
+.tropic {
+  grid-area: tropic;
+}
+
+.medicinal {
+  grid-area: medicinal;
+}
+
+.image {
+  grid-area: image;
+}
+
+.music  {
+  grid-area: music:
+}
