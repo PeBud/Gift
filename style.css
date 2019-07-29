@@ -4,6 +4,36 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(to left, green, skyblue);
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: lightgrey;
+  align-items: center;
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 24px;
+}
+
+.hamburger {
+  justify-self: end;
+}
+
 
 .tropic {
   background-image: url(https://cdn.images.stsvacations.com/inventory/Jamaica_-_Runaway_Bay/Jewel_Paradise_Cove_Beach_Resort__26_Spa/medium_Jewel-Paradise-Cove-Beach-Resort-Sunset-Bar-Aerial.jpg);
